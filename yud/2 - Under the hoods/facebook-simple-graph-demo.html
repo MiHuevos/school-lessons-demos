@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <style>
+    body, input {
+      font-family: Arial;
+      font-size: 30pt;
+    }
+
+    div {
+      text-align: center;
+    }
+
+    body {
+      /* Vertical Centering Hack */
+      display: flex;
+      min-height: 100vh;
+      min-width: 100vw;
+      margin: 0;
+      padding: 0;
+      align-items: center;
+    }
+
+    .filler {
+      flex: 1;
+    }
+  </style>
+  <script src="zepto.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+  <div class="filler"></div>
+  <div>
+    <form>
+      <input type="text" id="facebook-username">
+      <input type="submit" onclick="fetchUserDetails(); return false;" value="Fetch Details">
+    </form>
+    <hr>
+
+    <img src="http://placehold.it/400x400" id="picture"><br />
+    <label id="name">// User's Name //</label><br />
+    <label id="gender">// User's Gender //</label>
+  </div>
+  <div class="filler"></div>
+</body>
+</html>
